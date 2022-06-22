@@ -6,4 +6,4 @@ PATH = "/Users/Juan_1/Desktop/chromedriver"
 # the driver we are using is google chrome
 driver = webdriver.Chrome(PATH)
 
-driver.get("https://www.google.com/")
+driver.get("https://www.youtube.com/")
