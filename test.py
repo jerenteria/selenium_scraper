@@ -1,5 +1,9 @@
 import os
 from selenium import webdriver
+from dotenv import load_dotenv
+
+load_dotenv()
+
 
 os.environ['PATH'] += r"C:/Users/Juan_1/Desktop/Projects/selenium_chrome_driver"
 # driver is what actually lets selenium navigate the page
@@ -9,9 +13,10 @@ driver.get("https://shop.warriors.com/mens-new-era-white/black-golden-state-warr
 
 # hat = driver.find_element_by_class_name("Gear-item-image")
 # search_button = driver.find_element_by_name("btnK")
-add_hat_to_cart = driver.find_element_by_class_name("button large primary")
-
 driver.implicitly_wait(10)
+add_hat_to_cart = driver.find_element("button")
+add_hat_to_cart.click()
+
 # search_box.send_keys("PS5")
 
 
