@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-os.environ['PATH'] += r"C:/Users/Juan_1/Desktop/Projects/selenium_chrome_driver"
+os.environ['PATH'] += r"path"
 # driver is what actually lets selenium navigate the page
 # the driver is using chrome
 driver = webdriver.Chrome()
